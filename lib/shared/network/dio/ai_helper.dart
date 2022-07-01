@@ -6,6 +6,8 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class AIDioHelper {
+  ///Usage Example:
+  ///AIDioHelper.uploadImage(imageFile: File("./assets/image/after.png").absolute).then((response) {});
   static Future<Response<Map<String, dynamic>>> uploadImage({
     @required File imageFile,
   }) async {

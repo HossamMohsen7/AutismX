@@ -14,9 +14,8 @@ class ParentDioHelper {
 
   static Future<Response<Map<String, dynamic>>> deleteParentScore(
       int id) async {
-    return await DioHelper.postData(
-      url: endpoints.deleteParentScore,
-      data: {"id": id},
+    return await DioHelper.get(
+      url: endpoints.deleteParentScore + "/$id",
     ).then(
       (response) {
         return response;

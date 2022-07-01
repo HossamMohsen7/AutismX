@@ -100,7 +100,7 @@ class Reports extends StatelessWidget {
                                                 .then((value) {
                                               AppCubit.get(context)
                                                   .getReports();
-                                            });
+                                            }).catchError((err) {});
                                           },
                                           icon: const Icon(
                                             Icons.delete_outline,
